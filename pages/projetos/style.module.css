@@ -1,0 +1,116 @@
+.main {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainDiv {
+    flex: 1;
+}
+
+.projetoImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.name {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.projetoImg img {
+    width: 90%;
+    transition: .2s all ease-in;
+}
+.projDesc {
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.buttonArea {
+    width: 420px;
+    display: flex;
+}
+.button {
+    height: 40px;
+    width: 180px;
+    border: 1px solid white;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: white;
+    color: black;
+}
+.title {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.h3 {
+
+}
+.h2 {
+    font-size: 32px;
+}
+.h1 {
+    color: rgb(66, 170, 255);
+    font-size: 60px;
+}
+.tecList {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.eachTec {
+    height: 50px;
+    width: 90px;
+    border-radius: 5px;
+    background-color: rgb(66, 170, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s all ease-in;
+}
+.eachTec:hover {
+    background-color: rgb(25, 151, 255);
+}
+.eachPro {
+    border-top: 1px solid rgb(66, 170, 255);
+    border-bottom: 1px solid rgb(66, 170, 255);
+    border-left: 1px solid rgb(66, 170, 255);
+    margin-bottom: 5px;
+    transition: .2s all ease-in;
+    cursor: pointer;
+    padding: 4px;
+}
+.eachPro:hover {
+    background-color: rgb(66, 170, 255);
+}
+.nomeProjeto {
+    font-size: 16px;
+}
+.date {
+    font-size: 12px;
+}
+.projTec {
+    display: flex;
+}
+.projTec img {
+    width: 20px;
+    margin: 3px;
+}

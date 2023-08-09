@@ -1,0 +1,206 @@
+.header {
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(27, 27, 27);
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid rgb(97, 97, 97);
+}
+
+/*TOP*/
+.header .top {
+    width: 100%;
+    height: 65%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .top .logo {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .top .logo img {
+    height: 100%;
+}
+
+.header .top .topDiv {
+    height: 100%;
+    width: 200px;
+    border-left: 1px solid rgb(73, 73, 73);
+    border-right: 1px solid rgb(73, 73, 73);
+}
+
+.random {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileMenu {
+    height: 25px;
+    width: 40px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialArea {
+    height: 90%;
+    width: 80px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.socialLogos {
+    display: flex;
+}
+
+.socialArea img {
+    width: 25px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/*MIDDLE*/
+.header .middle {
+    width: 100%;
+    height: 35%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(73, 73, 73);
+}
+
+.header .middle a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+/*MENU RESPONSIVO*/
+.navlist {
+    background-color: black;
+    width: 70%;
+    height: 90vh;
+    margin-left: -70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    border-top: 1px solid white;
+    animation: 2s 1 alternate slidein;
+}
+
+.navLink {
+    width: 100%;
+    height: 50px;
+}
+
+.navLink a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: -70%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+@media (min-height: 575px) {
+    .header {
+        height: 17vh;
+    }
+}
+
+@media (min-width: 850px) {
+    .navlist {
+        display: none;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .header {
+        height: 18vh;
+    }
+    .header .top {
+        height: 100%;
+    }
+
+    .header .top .topDiv {
+        width: 200px;
+    }
+
+    .mobileMenu {
+        display: flex;
+    }
+
+    .header .middle {
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .header .top .logo {
+        width: 60%;
+    }
+
+    .header .top .logo img {
+        height: 80%;
+    }
+
+    .header .top .topDiv {
+        width: 100px;
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    .navlist {
+        width: 100%;
+    }
+}

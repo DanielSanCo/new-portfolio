@@ -1,0 +1,224 @@
+
+.main {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top {
+    height: 40vh;
+    width: 100vw;
+    background-color: aliceblue;
+    display: flex;
+    color: white;
+}
+
+.rightSideRight {
+    height: 100%;
+    width: 50%;
+}
+
+.rightSide {
+    flex: 1;
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: right;
+}
+
+.rightSideContent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.rightSideContent img {
+    width: 70px;
+}
+
+.curriculo {
+    height: 40px;
+    width: 180px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 10px 0;
+    margin: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .2s all ease-in;
+}
+
+.curriculo:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.buttonArea {
+    display: flex;
+    margin-top: 20px;
+}
+
+/*LEFT SIDE*/
+.leftSide {
+    flex: 1;
+    background-color: rgb(66, 170, 255);
+}
+
+/*CONTENT*/
+.content {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content .barra {
+    height: 450px;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.barraTitle {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    flex-direction: column;
+    margin: 10px;
+    letter-spacing: 2px;
+}
+
+.barraTitle .line {
+    width: 95%;
+    height: 2px;
+    background-color: rgb(66, 170, 255);
+}
+
+.eachItem {
+    height: 310px;
+    width: 420px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.eachItem img {
+    width: 100%;
+    height: 82%;
+    border-radius: 10px 10px 0 0;
+}
+
+.eachItem .itemTitle {
+    width: 100%;
+    height: 18%;
+    background-color: rgb(104, 104, 104);
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.estilo{
+    height: 35%;
+    width: 30%;
+    background-color: black;
+    border-radius: 10px 10px 0 0;
+}
+
+@media (min-height: 575px) {
+    .top {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .rightSideRight {
+        width: 40%;
+    }
+
+    .rightSideContent {
+        width: 60%;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .rightSideRight {
+        width: 30%;
+    }
+
+    .rightSideContent {
+        width: 70%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .rightSideRight {
+        width: 20%;
+    }
+
+    .rightSideContent {
+        width: 80%;
+    }
+
+    .top {
+        height: 70vh;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .rightSideRight {
+        width: 10%;
+    }
+
+    .rightSideContent {
+        width: 90%;
+    }
+
+    .content .barra {
+        width: 90%;
+    }
+
+    .eachItem {
+        height: 250px;
+        width: 280px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .rightSideRight {
+        width: 5%;
+    }
+
+    .rightSideContent {
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .buttonArea {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,129 @@
+.main {
+    width: 100vw;
+    min-height: 30vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projetoListTop {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterArea {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categorieFilter {
+    width: 150px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.projetoList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+}
+
+.eachProject {
+    height: 300px;
+    width: 400px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.eachProjectImg {
+    height: 280px;
+    width: 100%;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.tecName {
+    position: absolute;
+    width: 400px;
+    height: 280px;
+    background: linear-gradient(rgba(0, 0, 0, 0) 70%, black);
+    border-radius: 10px;
+    display: flex;
+    align-items: end;
+    color: white;
+    transition: .2s all ease-in;
+    z-index: 0;
+}
+
+.tecs {
+    margin: 0 0 30px 15px;
+    transition: .4s all ease-in;
+}
+
+.projectName {
+    margin: 5px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-height: 575px) {
+    .eachProject {
+        width: 330px;
+        height: 230px;
+        margin: 15px;
+    }
+    .eachProjectImg {
+        height: 230px;
+    }
+    .tecName {
+        width: 330px;
+        height: 230px;
+    }
+}
+
+@media (max-width: 980px) {
+    .projetoList {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 470px) {
+
+    .eachProject {
+        width: 320px;
+    }
+
+    .tecName {
+        width: 320px;
+    }
+
+    .categorieFilter {
+        width: 120px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .eachProject {
+        width: 268px;
+    }
+
+    .tecName {
+        width: 268px;
+    }
+}

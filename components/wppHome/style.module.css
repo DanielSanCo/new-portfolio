@@ -1,0 +1,199 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-image: url("https://i.pinimg.com/originals/2e/73/92/2e7392bd69172cb64fb648d6a5abb830.gif");
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.textArea {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    text-align: center;
+}
+
+.textArea .categoriesArea {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.textArea .eachCategorie {
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgba(48, 48, 48, 0.9);
+    cursor: pointer;
+    transition: .1s all ease-in;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.textArea .eachCategorie:hover {
+    background-color: rgba(255, 255, 255);
+    color: black;
+    text-shadow: none;
+}
+
+.textArea h2 {
+    font-size: 50px;
+    color: rgb(66, 170, 255);
+}
+
+.textArea h2 span {
+    color: rgb(66, 170, 255);
+}
+
+.textArea h1 {
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.devList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.curriculo {
+    width: 60%;
+    height: 45px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: .1s all ease-in;
+}
+
+.curriculo:hover {
+    background-color: rgba(48, 48, 48, 0.9);
+    color: white;
+    border: 1px solid white;
+}
+
+.eachDevList {
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid white;
+    margin: 10px;
+}
+
+
+@media (min-height: 575px) {
+    .textArea {
+        width: 50%;
+    }
+
+    .textArea .categoriesArea {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .textArea h1 {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    .texto {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .curriculo {
+        width: 70%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .textArea {
+        width: 80%;
+    }
+
+    .curriculo {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 1030px) {
+    .textArea {
+        width: 80%;
+    }
+
+    .curriculo {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 710px) {
+}
+
+@media (max-width: 600px) {
+
+    .main {
+        height: 600px;
+    }
+
+    .textArea {
+        width: 80%;
+    }
+
+    .textArea .eachCategorie {
+        height: 40px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .textArea .categoriesArea {
+        margin-bottom: 20px;
+    }
+
+    .curriculo {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .eachDevList {
+        margin: 5px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+}
