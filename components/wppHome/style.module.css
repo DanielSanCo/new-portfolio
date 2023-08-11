@@ -75,9 +75,30 @@
     align-items: center;
     flex-wrap: wrap;
 }
-
+.buttonsArea {
+    height: 45px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonContato {
+    width: 45%;
+    height: 45px;
+    background-color: rgb(66, 170, 255);
+    color: white;
+    font-weight: bold;
+    text-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 10px 40px 0 0;
+    cursor: pointer;
+    transition: .1s all ease-in;
+}
 .curriculo {
-    width: 60%;
+    width: 45%;
     height: 45px;
     background-color: white;
     color: black;
@@ -87,13 +108,17 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    margin: 10px;
     cursor: pointer;
     transition: .1s all ease-in;
 }
 
 .curriculo:hover {
+    background-color: rgba(48, 48, 48, 0.9);
+    color: white;
+    border: 1px solid white;
+}
+.buttonContato:hover {
     background-color: rgba(48, 48, 48, 0.9);
     color: white;
     border: 1px solid white;

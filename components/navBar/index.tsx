@@ -3,9 +3,9 @@ import styles from './style.module.css';
 
 const menuList = [
     { name: 'Home', link: '/' },
-    { name: 'Contato', link: '' },
+    { name: 'Contato', link: '/contato' },
     { name: 'Tecnologias', link: '/tecnologias' },
-    { name: 'Sobre', link: '' },
+    { name: 'Sobre', link: '/sobre' },
     { name: 'Profissional', link: '/profissional' },
     { name: 'Projetos', link: '/projetos' },
 ]

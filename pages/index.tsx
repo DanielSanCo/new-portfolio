@@ -4,6 +4,9 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import WppHome from '@/components/wppHome'
 import ProjetoList from '@/components/projects'
+import Tecnologias from './tecnologias'
+import Linguagens from '@/components/linguagens'
+import Sobre from '@/components/paginaSobre'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +22,8 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
         <WppHome />
         <ProjetoList />
+        <Linguagens />
+        <Sobre />
       </main>
     </>
   )
