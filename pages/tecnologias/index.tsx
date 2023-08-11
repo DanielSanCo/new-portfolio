@@ -1,5 +1,6 @@
 import { use, useState } from 'react';
 import styles from './style.module.css';
+import linguagens from '@/utils/linguagens';
 
 const Tecnologias = () => {
     const [wid1, setWid1] = useState(250)
@@ -23,11 +24,11 @@ const Tecnologias = () => {
     const [spaceHeight2, setSpaceHeight2] = useState(0)
     const [spaceHeight3, setSpaceHeight3] = useState(0)
 
-    
+
 
     const changeWidth = (num: number) => {
 
-        if(num === 1 && wid1 === 250) {
+        if (num === 1 && wid1 === 250) {
             setWid1(600)
             setSpaceHeight(300)
             setSpaceHeight1(300)
@@ -41,7 +42,7 @@ const Tecnologias = () => {
             setWid2(600)
             setSpaceHeight(300)
             setSpaceHeight2(300)
-        } else if(num === 2 && wid2 === 600) {
+        } else if (num === 2 && wid2 === 600) {
             setWid2(250)
             setSpaceHeight(0)
             setSpaceHeight2(0)
@@ -62,30 +63,45 @@ const Tecnologias = () => {
         <div className={styles.main}>
             <div className={styles.buttonsArea}>
                 <div className={`${styles.button} ${styles.button1}`} style={{ width: wid1, borderRadius: borderRadius }} onClick={() => { changeWidth(1), display1 == 'none' ? setBorderRadius('10px 10px 0 0') : setBorderRadius('10px 10px 10px 10px'), display1 == 'none' ? setDisplay1('flex') : setDisplay1('none') }}>Front End</div>
-                <div className={styles.listTec} style={{display: display1, height: spaceHeight1, width: wid1}}>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div className={styles.listTec} style={{ display: display1, height: spaceHeight1, width: wid1 }}>
+                    {linguagens.map((item, index) => (
+                        <>
+                            {item.tipo === 'Front End' ?
+                                <div className={styles.itemImg}>
+                                    <img src={item.img} alt="" className={styles.img} />
+                                    <div>{item.name}</div>
+                                </div>
+                                :
+                                ''
+                            }
+                        </>
+                    ))}
                 </div>
-                <div className={`${styles.button} ${styles.button2}`} style={{ width: wid2,borderRadius: borderRadius2 }} onClick={() => { changeWidth(2), display2 == 'none' ? setBorderRadius2('10px 10px 0 0') : setBorderRadius2('10px 10px 10px 10px'), display2 == 'none' ? setDisplay2('flex') : setDisplay2('none')}}>FullStack</div>
-                <div className={styles.listTec} style={{display: display2, height: spaceHeight2, width: wid2}}>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div className={`${styles.button} ${styles.button2}`} style={{ width: wid2, borderRadius: borderRadius2 }} onClick={() => { changeWidth(2), display2 == 'none' ? setBorderRadius2('10px 10px 0 0') : setBorderRadius2('10px 10px 10px 10px'), display2 == 'none' ? setDisplay2('flex') : setDisplay2('none') }}>FullStack</div>
+                <div className={styles.listTec} style={{ display: display2, height: spaceHeight2, width: wid2 }}>
+                    {linguagens.map((item, index) => (
+                        <div className={styles.itemImg}>
+                            <img src={item.img} alt="" className={styles.img} />
+                            <div>{item.name}</div>
+                        </div>
+                    ))}
                 </div>
                 <div className={`${styles.button} ${styles.button3}`} style={{ width: wid3, borderRadius: borderRadius3 }} onClick={() => { changeWidth(3), display3 == 'none' ? setBorderRadius3('10px 10px 0 0') : setBorderRadius3('10px 10px 10px 10px'), display3 == 'none' ? setDisplay3('flex') : setDisplay3('none') }}>Back End</div>
-                <div className={styles.listTec} style={{display: display3, height: spaceHeight3, width: wid3}}>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div className={styles.listTec} style={{ display: display3, height: spaceHeight3, width: wid3 }}>
+                    {linguagens.map((item, index) => (
+                        <>
+                            {item.tipo === 'Back End' ?
+                                <div className={styles.itemImg}>
+                                    <img src={item.img} alt="" className={styles.img} />
+                                    <div>{item.name}</div>
+                                </div>
+                                :
+                                ''
+                            }
+                        </>
+                    ))}
                 </div>
-                <div className={styles.spaceDown} style={{height: spaceHeight}}></div>
+                <div className={styles.spaceDown} style={{ height: spaceHeight }}></div>
             </div>
         </div>
     )
