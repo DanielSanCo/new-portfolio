@@ -50,7 +50,7 @@
     color: black;
 }
 .title {
-    height: 30%;
+    height: 40%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -69,15 +69,15 @@
 }
 .tecList {
     width: 100%;
-    height: 70%;
+    min-height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 .eachTec {
-    height: 50px;
-    width: 90px;
+    height: 45px;
+    width: 85px;
     border-radius: 5px;
     background-color: rgb(66, 170, 255);
     display: flex;
@@ -93,7 +93,7 @@
     border-top: 1px solid rgb(66, 170, 255);
     border-bottom: 1px solid rgb(66, 170, 255);
     border-left: 1px solid rgb(66, 170, 255);
-    margin-bottom: 5px;
+    margin-top: 5px;
     transition: .2s all ease-in;
     cursor: pointer;
     padding: 4px;
@@ -106,6 +106,7 @@
 }
 .date {
     font-size: 12px;
+    margin-top: 4px;
 }
 .projTec {
     display: flex;

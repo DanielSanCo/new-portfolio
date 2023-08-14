@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './style.module.css';
+import projetoList from '@/utils/projects';
 
 const tecs = [
     { name: 'JavaScript', img: '' },
@@ -10,17 +11,6 @@ const tecs = [
     { name: 'MySQL', img: '' },
 ]
 
-const projetoList = [
-    { img: 'https://anniebombanie.com/assets/work-personal-date-night.png', name: 'Nome Projeto', date: '05/05/1120', tec: [{ name: '', img: '/linkedin.png' }, { name: '', img: '/linkedin.png' }] },
-    { img: 'https://png.pngtree.com/png-vector/20210520/ourlarge/pngtree-letter-g-logo-png-png-image_3310074.jpg', name: 'Nome Projeto', date: '05/05/1120', tec: [{ name: '', img: '/linkedin.png' }] },
-    { img: 'https://img.freepik.com/vetores-premium/letra-g-coroa-logo-logotipo-da-coroa-na-letra-g-modelo-para-sinal-de-luxo-elegante-estrela-da-moda-beleza_754537-655.jpg', name: 'Nome Projeto', date: '05/05/1120', tec: [{ name: '', img: '/linkedin.png' }] },
-    { img: '', name: 'Nome Projeto', date: '05/05/1120', tec: [{ name: '', img: '/linkedin.png' }] },
-    { img: '', name: 'Nome Projeto', date: '05/05/1120', tec: [{ name: '', img: '/linkedin.png' }] },
-    { img: '', name: 'Nome Projeto', date: '05/05/1120', tec: [{ name: '', img: '/linkedin.png' }] },
-    { img: '', name: 'Nome Projeto', date: '05/05/1120', tec: [{ name: '', img: '/linkedin.png' }] },
-    { img: '', name: 'Nome Projeto', date: '05/05/1120', tec: [{ name: '', img: '/linkedin.png' }] },
-    { img: 'https://media.istockphoto.com/id/1306132242/pt/vetorial/g-letter-white-letter-g-with-arrow-delivery-or-logistic-icon.jpg?s=612x612&w=0&k=20&c=fWwiqvy6J5ag0ftiFPEjROKn97DsRXmiv7VJLHyGE5w=', name: 'Nome Projeto', date: '05/05/1120', tec: [{ name: '', img: '/linkedin.png' }] },
-]
 
 const Projetos = () => {
     const [number, setNumber] = useState(0)

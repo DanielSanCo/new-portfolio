@@ -101,7 +101,7 @@ const Tecnologias = () => {
                         </>
                     ))}
                 </div>
-                <div className={styles.spaceDown} style={{ height: spaceHeight }}></div>
+                <div className={styles.spaceDown} ></div>
             </div>
         </div>
     )

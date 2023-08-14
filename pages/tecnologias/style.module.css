@@ -65,6 +65,7 @@
 }
 .spaceDown {
     width: 100%;
+    height: 50px;
     transition: .6s all ease;
 }
 
