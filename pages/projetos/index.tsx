@@ -35,9 +35,9 @@ const Projetos = () => {
                 </div>
                 <div className={styles.tecList}>
                     {tecs.map((item, index) => (
-                        <div onClick={() => {tec === index ? setTec(-1) : setTec(index)}} style={{margin: '10px'}}>
+                        <div onClick={() => { tec === index ? setTec(-1) : setTec(index) }} style={{ margin: '10px' }}>
                             {tec === index ?
-                                <div className={styles.eachTec} key={index} style={{background: 'rgb(25, 151, 255)'}} onClick={() => setTec(-1)}>{item.name}</div>
+                                <div className={styles.eachTec} key={index} style={{ background: 'rgb(25, 151, 255)' }} onClick={() => setTec(-1)}>{item.name}</div>
                                 :
                                 <div className={styles.eachTec} key={index}>{item.name}</div>
                             }

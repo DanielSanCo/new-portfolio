@@ -15,6 +15,10 @@
     justify-content: center;
     align-items: center;
 }
+.nameImg {
+    display: flex;
+    align-items: center;
+}
 .middle {
     height: 90vh;
     width: 50vw;
@@ -28,6 +32,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.img {
+    width: 40px;
+    margin: 5px;
 }
 .contatoArea {
     height: 100%;
@@ -105,7 +113,7 @@
 
 .span {
     font-size: 11px;
-    color: red;
+    color: rgb(189, 0, 0);
 }
 .proInfo {
     height: 95%;
@@ -127,5 +135,5 @@
     font-size: 22px;
 }
 .proInfoInfo {
-
+    width: 200px;
 }

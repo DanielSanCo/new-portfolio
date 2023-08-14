@@ -14,20 +14,36 @@ const Contato = () => {
                 <div className={styles.barraLateral}>
                     <div className={styles.proInfo}>
                         <div className={styles.proInfoItem}>
-                            <div className={styles.proInfoTitle}>Contratar</div>
-                            <div className={styles.proInfoInfo}>Contrate-me.</div>
+                            <div className={styles.nameImg}>
+                                <div className={styles.proInfoTitle}>Contratar</div>
+                                <img src="./contato/contrato.png" alt="" className={styles.img} />
+
+                            </div>
+                            <div className={styles.proInfoInfo}>Estou disponivel para trabalho, caso o contratante queira marcar um entrevista, é só entrar em contato.</div>
                         </div>
                         <div className={styles.proInfoItem}>
-                            <div className={styles.proInfoTitle}>Sites</div>
-                            <div className={styles.proInfoInfo}>Crio sites responsivos.</div>
+                            <div className={styles.nameImg}>
+                                <div className={styles.proInfoTitle}>Sites</div>
+                                <img src="./contato/site.png" alt="" className={styles.img} />
+
+                            </div>
+                            <div className={styles.proInfoInfo}>Crio sites com design amigavel e profissional além de serem responsivos, quem podem ser usados em qualquer aparelho.</div>
                         </div>
                         <div className={styles.proInfoItem}>
-                            <div className={styles.proInfoTitle}>Tecnologias</div>
-                            <div className={styles.proInfoInfo}>Tecnologias mais pedidas no mercado.</div>
+                            <div className={styles.nameImg}>
+                                <div className={styles.proInfoTitle}>Tecnologias</div>
+                                <img src="./contato/tec.png" alt="" className={styles.img} />
+
+                            </div>
+                            <div className={styles.proInfoInfo}>Trabalho com as tecnologias mais pedidas no mercado, sempre tentando manter-me atualizado com as novidades tecnologicas.</div>
                         </div>
                         <div className={styles.proInfoItem}>
-                            <div className={styles.proInfoTitle}>Free lance</div>
-                            <div className={styles.proInfoInfo}>Trabalhos variados.</div>
+                            <div className={styles.nameImg}>
+                                <div className={styles.proInfoTitle}>Free Lancer</div>
+                                <img src="./contato/freeLancer.png" alt="" className={styles.img} />
+
+                            </div>
+                            <div className={styles.proInfoInfo}>Tenho disponibilidade para realizar trabalhos autonomos na area do desenvolvimento de sistemas.</div>
                         </div>
                     </div>
                 </div>
