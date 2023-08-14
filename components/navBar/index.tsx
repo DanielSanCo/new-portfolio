@@ -4,10 +4,10 @@ import styles from './style.module.css';
 const menuList = [
     { name: 'Home', link: '/' },
     { name: 'Contato', link: '/contato' },
+    { name: 'Projetos', link: '/projetos' },
     { name: 'Tecnologias', link: '/tecnologias' },
     { name: 'Sobre', link: '/sobre' },
     { name: 'Profissional', link: '/profissional' },
-    { name: 'Projetos', link: '/projetos' },
 ]
 
 const NavBar = () => {

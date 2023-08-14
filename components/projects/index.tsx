@@ -27,21 +27,23 @@ const ProjetoList = () => {
                 </div>
             </div>
             <div className={styles.projetoList}>
-                {projetoList.map((item, index) => (
-                    <div className={styles.eachProject} onMouseMove={() => { setDisplay(1) }} onMouseLeave={() => setDisplay(0)} key={index}>
-                        <div className={styles.eachProjectImg}>
-                            <div className={styles.tecName} style={{ opacity: display }}>
-                                <div className={styles.tecs} style={{ opacity: display }}>{item.name}</div>
+                <div className={styles.projetoArea}>
+                    {projetoList.map((item, index) => (
+                        <div className={styles.eachProject} onMouseMove={() => { setDisplay(1) }} onMouseLeave={() => setDisplay(0)} key={index}>
+                            <div className={styles.eachProjectImg}>
+                                <div className={styles.tecName} style={{ opacity: display }}>
+                                    <div className={styles.tecs} style={{ opacity: display }}>{item.name}</div>
+                                </div>
+                                <img src="" alt="" />
                             </div>
-                            <img src="" alt="" />
+                            <div className={styles.projectName}>
+                                <div>Tecnologias Figure</div>
+                                <div>Categoria</div>
+                                <div>{projeto}</div>
+                            </div>
                         </div>
-                        <div className={styles.projectName}>
-                            <div>Tecnologias Figure</div>
-                            <div>Categoria</div>
-                            <div>{projeto}</div>
-                        </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
 
             </div>
         </div>
