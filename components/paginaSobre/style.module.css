@@ -16,8 +16,29 @@
     margin-top: 230px;
     margin-left: 28%;
     box-shadow: 1px 1px 10px black;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
+.centerTitle {
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.miniList {
+    display: flex;
+}
+.miniList div {
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    margin: 5px;
+}
 .right {
     flex: 1;
     background-color: black;

@@ -51,23 +51,28 @@
 }
 
 .eachProject {
-    height: 300px;
+    height: 240px;
     width: 400px;
     margin: 10px;
     cursor: pointer;
 }
 
 .eachProjectImg {
-    height: 280px;
+    height: 240px;
     width: 100%;
-    background-color: aqua;
     border-radius: 10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
+.tecImg {
+    width: 18px;
+    margin-right: 5px;
+}
 .tecName {
     position: absolute;
     width: 400px;
-    height: 280px;
+    height: 240px;
     background: linear-gradient(rgba(0, 0, 0, 0) 70%, black);
     border-radius: 10px;
     display: flex;
@@ -76,12 +81,18 @@
     transition: .2s all ease-in-out;
     z-index: 0;
 }
-
+.projImg {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
 .tecs {
     margin: 0 0 30px 15px;
     transition: .4s all ease-in;
 }
-
+.tecList {
+    display: flex;
+}
 .projectName {
     margin: 5px;
     font-size: 13px;
@@ -89,7 +100,7 @@
     justify-content: space-between;
 }
 
-@media (min-height: 575px) {
+@media (max-height: 575px) {
     .eachProject {
         width: 330px;
         height: 230px;

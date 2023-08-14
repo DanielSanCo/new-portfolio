@@ -3,7 +3,18 @@ import styles from './style.module.css';
 const Sobre = () => {
     return (
         <div className={styles.main}>
-            <div className={styles.centerAbsolute}></div>
+            <div className={styles.centerAbsolute}>
+                <div className={styles.centerTitle}>Meu <span style={{color: 'blue', marginLeft: '7px'}}> Portfolio</span></div>
+                <div className={styles.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque exercitationem dolorum, dicta voluptatum dolores accusamus necessitatibus quod ipsum quaerat facere sunt labore pariatur culpa quas doloremque. Unde quaerat beatae similique.</div>
+                <div className={styles.miniList}>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
             <div className={styles.right}>
                 <div className={styles.titulo}><span>S</span>obre o&nbsp;<span>D</span>esenvolvedor</div>
                 <div className={styles.sobre}>

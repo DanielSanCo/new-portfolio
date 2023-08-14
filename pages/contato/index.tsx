@@ -27,7 +27,7 @@ const Contato = () => {
                                 <img src="./contato/site.png" alt="" className={styles.img} />
 
                             </div>
-                            <div className={styles.proInfoInfo}>Crio sites com design amigavel e profissional além de serem responsivos, quem podem ser usados em qualquer aparelho.</div>
+                            <div className={styles.proInfoInfo}>Crio sites com design amigavel e profissional, além de serem responsivos, isso é, que podem ser usados em qualquer aparelho.</div>
                         </div>
                         <div className={styles.proInfoItem}>
                             <div className={styles.nameImg}>
@@ -35,7 +35,7 @@ const Contato = () => {
                                 <img src="./contato/tec.png" alt="" className={styles.img} />
 
                             </div>
-                            <div className={styles.proInfoInfo}>Trabalho com as tecnologias mais pedidas no mercado, sempre tentando manter-me atualizado com as novidades tecnologicas.</div>
+                            <div className={styles.proInfoInfo}>Trabalho com as tecnologias mais pedidas do mercado, sempre tentando manter-me atualizado com as novidades tecnologicas.</div>
                         </div>
                         <div className={styles.proInfoItem}>
                             <div className={styles.nameImg}>
@@ -43,7 +43,7 @@ const Contato = () => {
                                 <img src="./contato/freeLancer.png" alt="" className={styles.img} />
 
                             </div>
-                            <div className={styles.proInfoInfo}>Tenho disponibilidade para realizar trabalhos autonomos na area do desenvolvimento de sistemas.</div>
+                            <div className={styles.proInfoInfo}>Tenho disponibilidade para realizar trabalhos autonomos na area de desenvolvimento de sistemas.</div>
                         </div>
                     </div>
                 </div>

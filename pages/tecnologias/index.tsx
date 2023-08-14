@@ -1,5 +1,6 @@
 import { use, useState } from 'react';
 import styles from './style.module.css';
+import MainTop from '@/components/mainTop'
 import linguagens from '@/utils/linguagens';
 
 const Tecnologias = () => {
@@ -61,13 +62,14 @@ const Tecnologias = () => {
 
     return (
         <div className={styles.main}>
+            <MainTop />
             <div className={styles.buttonsArea}>
                 <div className={`${styles.button} ${styles.button1}`} style={{ width: wid1, borderRadius: borderRadius }} onClick={() => { changeWidth(1), display1 == 'none' ? setBorderRadius('10px 10px 0 0') : setBorderRadius('10px 10px 10px 10px'), display1 == 'none' ? setDisplay1('flex') : setDisplay1('none') }}>Front End</div>
                 <div className={styles.listTec} style={{ display: display1, height: spaceHeight1, width: wid1 }}>
                     {linguagens.map((item, index) => (
                         <>
                             {item.tipo === 'Front End' ?
-                                <div className={styles.itemImg}>
+                                <div className={styles.itemImg} key={index}>
                                     <img src={item.img} alt="" className={styles.img} />
                                     <div>{item.name}</div>
                                 </div>
@@ -80,7 +82,7 @@ const Tecnologias = () => {
                 <div className={`${styles.button} ${styles.button2}`} style={{ width: wid2, borderRadius: borderRadius2 }} onClick={() => { changeWidth(2), display2 == 'none' ? setBorderRadius2('10px 10px 0 0') : setBorderRadius2('10px 10px 10px 10px'), display2 == 'none' ? setDisplay2('flex') : setDisplay2('none') }}>FullStack</div>
                 <div className={styles.listTec} style={{ display: display2, height: spaceHeight2, width: wid2 }}>
                     {linguagens.map((item, index) => (
-                        <div className={styles.itemImg}>
+                        <div className={styles.itemImg} key={index}>
                             <img src={item.img} alt="" className={styles.img} />
                             <div>{item.name}</div>
                         </div>
@@ -91,7 +93,7 @@ const Tecnologias = () => {
                     {linguagens.map((item, index) => (
                         <>
                             {item.tipo === 'Back End' ?
-                                <div className={styles.itemImg}>
+                                <div className={styles.itemImg} key={index}>
                                     <img src={item.img} alt="" className={styles.img} />
                                     <div>{item.name}</div>
                                 </div>

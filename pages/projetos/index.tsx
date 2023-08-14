@@ -20,7 +20,7 @@ const Projetos = () => {
         <div className={styles.main}>
             <div className={`${styles.projetoImg} ${styles.mainDiv}`}>
                 <div className={styles.name}>{projetoList[number].name}</div>
-                <img src={projetoList[number].img} alt="" />
+                <img src={projetoList[number].imgPc} alt="" />
                 <div className={styles.projDesc}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam recusandae at, dolor autem totam doloremque distinctio debitis consequuntur numquam similique, ipsum vel cum odio molestias molestiae saepe, voluptatem facere voluptatibus.</div>
                 <div className={styles.buttonArea}>
                     <div className={styles.button}>Abrir Projeto</div>
