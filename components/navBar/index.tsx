@@ -10,6 +10,10 @@ const menuList = [
     { name: 'Profissional', link: '/profissional' },
 ]
 
+const social = [
+    { name: 'Instagram', img: ''}
+]
+
 const NavBar = () => {
     const [marginL, setMarginL] = useState('-70%')
     const [anima, setAnima] = useState('')
@@ -47,17 +51,20 @@ const NavBar = () => {
 
                 </div>
                 <div className={styles.logo}>
-                    <img src="./logo.png" alt="" />
+                    <a href='/' style={{height: '100%'}}><img src="./logo.png" alt="" /></a>
                 </div>
                 <div className={`${styles.social} ${styles.topDiv}`}>
                     <div className={styles.socialArea}>
                         <div>Social</div>
                         <div className={styles.socialLogos}>
                             <div>
-                                <a href="https://www.linkedin.com/in/daniel-santos-corr%C3%AAa-007979217/" target='_blank'><img src="./linkedin.png" alt="" /></a>
+                                <a href="https://github.com/DanielSanCo" target='_blank'><img src="./github.png" alt="" /></a>
                             </div>
                             <div>
-                                <a href="https://github.com/DanielSanCo" target='_blank'><img src="./linkedin.png" alt="" /></a>
+                                <a href="https://www.linkedin.com/in/daniel-santos-corr%C3%AAa-007979217/" target='_blank'><img src="./linkedin.avif" alt="" /></a>
+                            </div>
+                            <div>
+                                <a href="https://www.instagram.com/daniel.santos.c/" target='_blank'><img src="./instagram.avif" alt="" /></a>
                             </div>
                         </div>
                     </div>

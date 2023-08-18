@@ -57,11 +57,11 @@
 
 .textArea h2 {
     font-size: 50px;
-    color: rgb(66, 170, 255);
+    color: rgb(77, 170, 255);
 }
 
 .textArea h2 span {
-    color: rgb(66, 170, 255);
+    color: rgb(77, 170, 255);
 }
 
 .textArea h1 {
@@ -75,6 +75,7 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
 .buttonsArea {
     height: 45px;
     width: 70%;
@@ -84,10 +85,11 @@
     margin-top: 35px;
     margin-bottom: 35px;
 }
+
 .buttonContato {
     width: 45%;
     height: 45px;
-    background-color: rgb(66, 170, 255);
+    background-color: rgb(77, 170, 255);
     color: white;
     font-weight: bold;
     text-shadow: none;
@@ -99,6 +101,7 @@
     cursor: pointer;
     transition: .1s all ease-in;
 }
+
 .curriculo {
     width: 45%;
     height: 45px;
@@ -120,6 +123,7 @@
     color: white;
     border: 1px solid white;
 }
+
 .buttonContato:hover {
     background-color: rgba(48, 48, 48, 0.9);
     color: white;
@@ -147,15 +151,18 @@
         margin-top: 20px;
         margin-bottom: 10px;
     }
+
     .textArea h1 {
         margin-top: 5px;
         margin-bottom: 10px;
         font-size: 25px;
     }
+
     .texto {
         margin-top: 10px;
         font-size: 15px;
     }
+
     .curriculo {
         width: 70%;
         margin-top: 30px;
@@ -164,7 +171,6 @@
 }
 
 @media (max-width: 1200px) {
-
     .textArea {
         width: 80%;
     }
@@ -186,8 +192,7 @@
 
 }
 
-@media (max-width: 710px) {
-}
+@media (max-width: 710px) {}
 
 @media (max-width: 600px) {
 
@@ -221,6 +226,8 @@
 
 }
 
-@media (max-width: 450px) {
-
+@media (min-height: 1000px) {
+    .main {
+        height: 60vh;
+    }
 }

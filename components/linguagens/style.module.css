@@ -11,19 +11,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: auto;
 }
 
 .eachLinguagem {
     height: 80px;
     width: 80px;
-    border-radius: 50%;
-    background: linear-gradient(rgb(66, 170, 255), rgb(0, 28, 50));
+    border-radius: 20px;
+    background: linear-gradient(rgb(77, 170, 255), rgb(0, 28, 50));
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 4px;
 }
 .eachLinguagem .img {
     height: 60%;
+}
+
+@media (max-width: 650px) {
+    .container {
+        justify-content: left;
+    }
+
 }

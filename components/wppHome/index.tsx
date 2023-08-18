@@ -29,7 +29,7 @@ const WppHome = () => {
                     <h1>Transformando códigos em soluções inovadoras</h1>
                     <div className={styles.texto}>Desenvolvedor de Softwares Fullstack Junior formado em Analise e Desenvolvimento de Sistemas, criar sistemas e softwares com as técnologias mais usadas no mercado</div>
                     <div className={styles.buttonsArea}>
-                        <div className={styles.curriculo}>Download Curriculo Vitae</div>
+                        <div className={styles.curriculo}><a href="./curriculo.vite.Daniel.pdf" download> Download Curriculo Vitae</a></div>
                         <a href="mailto:daniel.santos3210@outlook.com" className={styles.buttonContato}>Contato</a>
                     </div>
                     <div className={styles.devList}>

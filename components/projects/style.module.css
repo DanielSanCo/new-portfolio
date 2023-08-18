@@ -28,13 +28,41 @@
     width: 150px;
     height: 35px;
     border: 1px solid black;
-    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: .1s all ease-in;
 }
-
+.categorieFilter:hover {
+    background-color: aliceblue;
+}
+.listaCate {
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    transition: .2s all ease-in;
+    border-radius: 0 0px 10px 10px;
+    z-index: 1;
+}
+.eachCate {
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eachCate:hover {
+    color: rgb(77, 170, 255);
+}
+.anything {
+    height: 300px;
+}
 .projetoList {
     display: flex;
     align-items: center;
@@ -49,7 +77,16 @@
     width: 90%;
     height: 100%;
 }
-
+.eachTecList {
+    display: flex;
+    align-items: center;
+}
+.imgTec {
+    width: 20px;
+    margin-right: 10px;
+    margin-top: 3px;
+    margin-bottom: 4px;
+}
 .eachProject {
     height: 240px;
     width: 400px;

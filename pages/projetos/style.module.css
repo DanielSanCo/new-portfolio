@@ -64,7 +64,7 @@
     font-size: 32px;
 }
 .h1 {
-    color: rgb(66, 170, 255);
+    color: rgb(77, 170, 255);
     font-size: 60px;
 }
 .tecList {
@@ -79,7 +79,7 @@
     height: 45px;
     width: 85px;
     border-radius: 5px;
-    background-color: rgb(66, 170, 255);
+    background-color: rgb(77, 170, 255);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,16 +90,16 @@
     background-color: rgb(25, 151, 255);
 }
 .eachPro {
-    border-top: 1px solid rgb(66, 170, 255);
-    border-bottom: 1px solid rgb(66, 170, 255);
-    border-left: 1px solid rgb(66, 170, 255);
+    border-top: 1px solid rgb(77, 170, 255);
+    border-bottom: 1px solid rgb(77, 170, 255);
+    border-left: 1px solid rgb(77, 170, 255);
     margin-top: 5px;
     transition: .2s all ease-in;
     cursor: pointer;
     padding: 4px;
 }
 .eachPro:hover {
-    background-color: rgb(66, 170, 255);
+    background-color: rgb(77, 170, 255);
 }
 .nomeProjeto {
     font-size: 16px;

@@ -15,10 +15,12 @@
     justify-content: center;
     align-items: center;
 }
+
 .nameImg {
     display: flex;
     align-items: center;
 }
+
 .middle {
     height: 90vh;
     width: 50vw;
@@ -26,6 +28,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .right {
     height: 90vh;
     width: 10vw;
@@ -33,10 +36,12 @@
     justify-content: center;
     align-items: center;
 }
+
 .img {
     width: 40px;
     margin: 5px;
 }
+
 .contatoArea {
     height: 100%;
     width: 100%;
@@ -44,10 +49,11 @@
     box-shadow: 1px 1px 7px black;
     z-index: 1;
 }
+
 .barraLateral {
     height: 52%;
     width: 100%;
-    background-color: rgb(66, 170, 255);
+    background-color: rgb(77, 170, 255);
     display: flex;
     justify-content: right;
     align-items: center;
@@ -62,6 +68,7 @@
     font-size: 26px;
     letter-spacing: 4px;
     margin-top: 20px;
+    color: rgb(77, 170, 255);
 }
 
 .inputArea {
@@ -72,11 +79,13 @@
     align-items: center;
     flex-direction: column;
 }
+
 .inputTitle {
     width: 50%;
     margin-bottom: 8px;
     font-size: 17px;
 }
+
 .input {
     width: 50%;
     height: 32px;
@@ -91,7 +100,7 @@
 .buttonEnviar {
     width: 25%;
     height: 45px;
-    background-color: rgb(66, 170, 255);
+    background-color: rgb(77, 170, 255);
     color: white;
     font-weight: bold;
     text-shadow: none;
@@ -107,14 +116,15 @@
 
 .buttonEnviar:hover {
     background-color: rgba(48, 48, 48, 0.9);
-    color: rgb(66, 170, 255);
-    border: 1px solid rgb(66, 170, 255);
+    color: rgb(77, 170, 255);
+    border: 1px solid rgb(77, 170, 255);
 }
 
 .span {
     font-size: 11px;
     color: rgb(189, 0, 0);
 }
+
 .proInfo {
     height: 95%;
     width: 75%;
@@ -124,16 +134,32 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
 .proInfoItem {
     width: 45%;
     height: 45%;
     margin: 5px;
     font-size: 14px;
 }
+
 .proInfoTitle {
     font-weight: bold;
     font-size: 22px;
 }
+
 .proInfoInfo {
     width: 200px;
+}
+
+@media (min-height: 1000px) {
+    .main {
+        min-height: 80vh;
+    }
+
+    .contatoArea {
+        height: 70%;
+    }
+    .barraLateral {
+        height: 42%;
+    }
 }

@@ -1,18 +1,32 @@
 import styles from './style.module.css';
 
+const listAreas = [
+    { nome: 'Home', img: './projetos/portfolio.png' },
+    { nome: 'Home', img: './projetos/portfolio2.png' },
+    { nome: 'Home', img: './projetos/portfolio3.png' },
+    { nome: 'Home', img: './projetos/portfolio4.png' },
+    { nome: 'Home', img: './projetos/portfolio5.png' },
+    { nome: 'Home', img: '' },
+]
+
 const Sobre = () => {
     return (
         <div className={styles.main}>
             <div className={styles.centerAbsolute}>
-                <div className={styles.centerTitle}>Meu <span style={{color: 'blue', marginLeft: '7px'}}> Portfolio</span></div>
-                <div className={styles.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque exercitationem dolorum, dicta voluptatum dolores accusamus necessitatibus quod ipsum quaerat facere sunt labore pariatur culpa quas doloremque. Unde quaerat beatae similique.</div>
+                <div className={styles.centerTitle}>Meu <span style={{ color: 'rgb(66, 170, 255)' }}>&nbsp;Portfolio</span></div>
+                <div className={styles.desc}>Conheça, através do meu portfolio, um pouco mais sobre minha carreira profissional DEV.</div>
                 <div className={styles.miniList}>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div>SCRUM</div>
+                    <div>GIT</div>
+                    <div>API Rest</div>
+                    <div>CRUD</div>
+                    <div>BSM's</div>
+                    <div>Clean Code</div>
+                </div>
+                <div className={styles.boxArea}>
+                    {listAreas.map((item, index) => (
+                        <img className={styles.eachArea} src={item.img} alt="" />
+                    ))}
                 </div>
             </div>
             <div className={styles.right}>
@@ -29,7 +43,7 @@ const Sobre = () => {
                 </div>
             </div>
             <div className={styles.left}>
-                <img src="https://www.guiacommarketing.com.br/wp-content/uploads/2018/10/Portfolio-lite-758x431.png" alt="" />
+                <img src="./sobreDiv.png" alt="" />
             </div>
         </div>
     )
