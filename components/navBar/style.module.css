@@ -148,11 +148,6 @@
     }
 }
 
-@media (min-height: 575px) {
-    .header {
-        height: 17vh;
-    }
-}
 
 @media (min-width: 850px) {
     .navlist {
@@ -163,7 +158,7 @@
 
 @media (max-width: 850px) {
     .header {
-        height: 18vh;
+        height: 15vh;
     }
     .header .top {
         height: 100%;
@@ -195,12 +190,24 @@
     .header .top .topDiv {
         width: 100px;
     }
+    .socialLogos {
+        flex-direction: column;
+    }
 
+}
+@media (min-height: 575px) {
+    .header {
+        height: 17vh;
+    }
 }
 
 @media (max-width: 430px) {
 
     .navlist {
         width: 100%;
+    }
+
+    .header .top .logo {
+        height: 90%;
     }
 }

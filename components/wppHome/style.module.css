@@ -97,7 +97,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    margin: 10px 40px 0 0;
+    margin: 10px;
     cursor: pointer;
     transition: .1s all ease-in;
 }
@@ -143,6 +143,10 @@
 
 
 @media (min-height: 575px) {
+    .main {
+        height: 100vh;
+    }
+
     .textArea {
         width: 50%;
     }
@@ -197,7 +201,7 @@
 @media (max-width: 600px) {
 
     .main {
-        height: 600px;
+        height: 80vh;
     }
 
     .textArea {
@@ -212,6 +216,10 @@
 
     .textArea .categoriesArea {
         margin-bottom: 20px;
+    }
+
+    .buttonsArea {
+        width: 100%;
     }
 
     .curriculo {

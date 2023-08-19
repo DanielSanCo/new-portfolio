@@ -51,7 +51,7 @@ const NavBar = () => {
 
                 </div>
                 <div className={styles.logo}>
-                    <a href='/' style={{height: '100%'}}><img src="./logo.png" alt="" /></a>
+                    <a href='/' style={{height: '100%'}}><img src="./logo.png" className={styles.logoImg} alt="" /></a>
                 </div>
                 <div className={`${styles.social} ${styles.topDiv}`}>
                     <div className={styles.socialArea}>
