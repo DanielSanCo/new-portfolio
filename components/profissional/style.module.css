@@ -1,0 +1,51 @@
+.main {
+    min-height: 40vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.span {
+    color: rgb(77, 170, 255);
+}
+.line {
+    width: 70%;
+    height: 3px;
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, rgb(77, 170, 255), rgba(0,0,0,0));
+}
+.carreiraText {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    width: 70%;
+}
+
+@media (max-width: 800px) {
+    .main {
+        min-height: 60vh;
+    }
+    .carreiraText {
+        height: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main {
+        min-height: 80vh;
+    }
+    .carreiraText {
+        height: 500px;
+    }
+}

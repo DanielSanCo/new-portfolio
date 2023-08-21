@@ -1,6 +1,12 @@
 import styles from './style.module.css';
 
-const MainTop = () => {
+type Props = {
+    letter: string,
+    text: string,
+    img: string
+}
+
+const MainTop = ({ letter, text, img }: Props) => {
     return (
         <div className={styles.top}>
             <div className={styles.rightSide}>
@@ -10,15 +16,15 @@ const MainTop = () => {
                         <img src="./logo.png" alt="" />
                     </div>
                     <h2>Cronologia</h2>
-                    <h1>Profissional</h1>
-                    <div>Descubra um pouco mais sobre minha jornada no ambito profissional</div>
+                    <h1>{letter}</h1>
+                    <div>{text}</div>
                     <div className={styles.buttonArea}>
-                        <div className={styles.curriculo}><a href="./curriculo.vite.Daniel.pdf" download>Curriculo</a></div>
-                        <a href="mailto:daniel.santos3210@outlook.com" className={styles.buttonContato}>Contato</a>
+                        <a href="./curriculo.vite.Daniel.pdf" download><div className={styles.curriculo}>Curriculo</div></a>
+                        <a href="mailto:daniel.santos3210@outlook.com"><div className={styles.curriculo}>Contato</div></a>
                     </div>
                 </div>
             </div>
-            <div className={styles.leftSide}></div>
+            <div className={styles.leftSide} style={{ backgroundImage: `url("${img}")` }}></div>
         </div>
     )
 }

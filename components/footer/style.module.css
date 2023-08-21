@@ -52,3 +52,15 @@
         height: 40vh;
     }
 }
+@media (max-width: 575px) {
+    .footer {
+        height: 40vh;
+    }
+    .img {
+        width: 100px;
+        margin: 10px;
+    }
+    .eachSpace {
+        margin: 10px;
+    }
+}

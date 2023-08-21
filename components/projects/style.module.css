@@ -158,7 +158,7 @@
     }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 475px) {
 
     .eachProject {
         width: 320px;
@@ -170,7 +170,11 @@
     }
 
     .categorieFilter {
-        width: 120px;
+        width: 140px;
+    }
+
+    .listaCate {
+        width: 140px;
     }
 }
 

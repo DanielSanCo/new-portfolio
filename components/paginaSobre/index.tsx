@@ -6,7 +6,7 @@ const listAreas = [
     { nome: 'Home', img: './projetos/portfolio3.png' },
     { nome: 'Home', img: './projetos/portfolio4.png' },
     { nome: 'Home', img: './projetos/portfolio5.png' },
-    { nome: 'Home', img: '' },
+    { nome: 'Home', img: './projetos/portfolio7.png' },
 ]
 
 const Sobre = () => {

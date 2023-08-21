@@ -7,6 +7,7 @@ import ProjetoList from '@/components/projects'
 import Tecnologias from './tecnologias'
 import Linguagens from '@/components/linguagens'
 import Sobre from '@/components/paginaSobre'
+import Profissional from '@/components/profissional'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +25,7 @@ export default function Home() {
         <ProjetoList />
         <Linguagens />
         <Sobre />
+        <Profissional />
       </main>
     </>
   )
