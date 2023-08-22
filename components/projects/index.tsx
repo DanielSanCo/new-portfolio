@@ -19,16 +19,28 @@ const teclist = [
     { name: 'Nest.js', setname: 'Nest.js', img: './linguagens/nest.png' },
 ]
 
+const listAreas = [
+    { nome: 'Home', img: './projetos/portfolio.png' },
+    { nome: 'Home', img: './projetos/portfolio2.png' },
+    { nome: 'Home', img: './projetos/portfolio3.png' },
+    { nome: 'Home', img: './projetos/portfolio4.png' },
+    { nome: 'Home', img: './projetos/portfolio5.png' },
+    { nome: 'Home', img: './projetos/portfolio7.png' },
+    { nome: 'Home', img: './projetos/portfolio8.png' },
+]
+
 const ProjetoList = () => {
     const [display, setDisplay] = useState(0);
     const [projeto, setProjeto] = useState(-1);
     const [id, setId] = useState(-1);
-    const [idd, setIdd] = useState(0)
+    const [idd, setIdd] = useState(0);
+    const [iddd, setIddd] = useState(0);
     const [categoria, setCategoria] = useState('Categorias');
     const [tecnologia, setTecnologia] = useState('Tecnologias');
 
     const [visu, setVisu] = useState('none');
     const [visu2, setVisu2] = useState('none');
+    const [visuali, setVisualizacao] = useState('none')
 
     const [radius, setRadius] = useState('5px');
     const [radius2, setRadius2] = useState('5px');
@@ -49,6 +61,34 @@ const ProjetoList = () => {
 
     return (
         <div className={styles.main}>
+
+
+            <div className={styles.main2} style={{ display: visuali }} >
+                <div className={styles.center}>
+                    <div className={styles.right}>
+                        <div className={styles.titleArea}>
+                            <div className={styles.title}>{projetoList[iddd].name}</div>
+                            <div className={styles.close}>
+                                <img src="./close.png" alt="" className={styles.closeImg} onClick={() => setVisualizacao('none')} />
+                            </div>
+                        </div>
+                        <div className={styles.projText}>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati ex mollitia nesciunt quis recusandae corrupti sapiente aspernatur aliquid aperiam, nisi, optio fuga laboriosam commodi officia rem! Eveniet porro blanditiis amet?
+                        </div>
+                        <div className={styles.date}>{projetoList[iddd].date}</div>
+                        <div className={styles.space}></div>
+                    </div>
+                    <div className={styles.left}>
+                        <img src={projetoList[iddd].img} alt="" className={styles.img} />
+                        <div className={styles.buttonsArea}>
+                            <a href={projetoList[iddd].link}><div className={styles.button}>Acessar</div></a>
+                            <a href={projetoList[iddd].github}><div className={styles.button}>Github</div></a>
+                            <a href={projetoList[iddd].linkedin}><div className={styles.button}>Linkedin</div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div className={styles.projetoListTop}>
                 <div className={styles.filterArea}>
                     <div>
@@ -86,7 +126,7 @@ const ProjetoList = () => {
                                 {(item.categoria === categoria || categoria === 'Categorias') && item.tec.find(i => i.name === tecnologia || tecnologia === 'Tecnologias') ?
                                     <>
                                         {index === id ?
-                                            <div className={styles.eachProject} onMouseMove={() => showName(index)} onMouseLeave={() => setDisplay(0)} key={index}>
+                                            <div className={styles.eachProject} onClick={() => {setVisualizacao('flex'), setIddd(index)}} onMouseMove={() => showName(index)} onMouseLeave={() => setDisplay(0)} key={index}>
                                                 <div className={styles.eachProjectImg} style={{ backgroundImage: `url(${item.img})` }}>
                                                     <div className={styles.tecName} style={{ opacity: display }}>
                                                         <div className={styles.tecs} style={{ opacity: display }}>{item.name}</div>
@@ -104,7 +144,7 @@ const ProjetoList = () => {
                                                 </div>
                                             </div>
                                             :
-                                            <div className={styles.eachProject} onMouseMove={() => showName(index)} onMouseLeave={() => setDisplay(0)} key={index}>
+                                            <div className={styles.eachProject} onClick={() => {setVisualizacao('flex'), setIddd(index)}} onMouseMove={() => showName(index)} onMouseLeave={() => setDisplay(0)} key={index}>
                                                 <div className={styles.eachProjectImg} style={{ backgroundImage: `url(${item.img})` }}>
                                                 </div>
                                                 <div className={styles.projectName}>
@@ -127,7 +167,49 @@ const ProjetoList = () => {
                         ))}
                     </>
                     <>
-                        
+                        {projetoList.map((item, index) => (
+                            <>
+                                {(item.categoria === categoria || categoria === 'Categorias') && item.tec.find(i => i.name === tecnologia || tecnologia === 'Tecnologias') ?
+                                    <>
+                                        {index === id ?
+                                            <div className={styles.eachProject2} onClick={() => {setVisualizacao('flex'), setIddd(index)}}>
+                                                <img src={item.img} alt="" className={styles.img} />
+                                                <div className={styles.projName}>
+                                                    <div className={styles.names}>{item.name}</div>
+                                                    <div className={styles.tecs}>
+                                                        {item.tec.map((item, index) => (
+                                                            <div key={index}>
+                                                                <img src={item.img} alt="" className={styles.tecImg2} />
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                    <div className={styles.cateItem}>{item.categoria}</div>
+                                                </div>
+                                                <div className={styles.border}></div>
+                                            </div>
+                                            :
+                                            <div className={styles.eachProject2} onClick={() => {setVisualizacao('flex'), setIddd(index)}}>
+                                                <img src={item.img} alt="" className={styles.img} />
+                                                <div className={styles.projName}>
+                                                    <div className={styles.names}>{item.name}</div>
+                                                    <div className={styles.tecs}>
+                                                        {item.tec.map((item, index) => (
+                                                            <div key={index}>
+                                                                <img src={item.img} alt="" className={styles.tecImg2} />
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                    <div className={styles.cateItem}>{item.categoria}</div>
+                                                </div>
+                                                <div className={styles.border}></div>
+                                            </div>
+                                        }
+                                    </>
+                                    :
+                                    ''
+                                }
+                            </>
+                        ))}
                     </>
                 </div>
 

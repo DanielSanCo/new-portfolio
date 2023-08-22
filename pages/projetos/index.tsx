@@ -69,7 +69,7 @@ const Projetos = () => {
                             {item.tec.find(i => i.name === tecnologia) || tecnologia === '' ?
                                 <>
                                     {index === number ?
-                                        <div className={styles.eachPro} key={index} style={{ backgroundColor: 'rgb(66, 170, 255)' }} onMouseMove={() => { setNumber(index) }} >
+                                        <div className={styles.eachPro} key={index} style={{ backgroundColor: 'rgb(77, 170, 255)' }} onMouseMove={() => { setNumber(index) }} >
                                             <div className={styles.nomeProjeto}>{item.name}</div>
                                             <div className={styles.date}>{item.date}</div>
                                             <div className={styles.projTec}>

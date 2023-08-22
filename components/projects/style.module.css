@@ -8,6 +8,8 @@
     flex-direction: column;
 }
 
+/* CATEGORIA AREA */
+
 .projetoListTop {
     height: 100px;
     width: 100%;
@@ -63,6 +65,21 @@
 .anything {
     height: 300px;
 }
+
+
+.eachTecList {
+    display: flex;
+    align-items: center;
+}
+.imgTec {
+    width: 20px;
+    margin-right: 10px;
+    margin-top: 3px;
+    margin-bottom: 4px;
+}
+
+/* LISTA DE PROJETOS */
+
 .projetoList {
     display: flex;
     align-items: center;
@@ -77,21 +94,88 @@
     width: 90%;
     height: 100%;
 }
-.eachTecList {
-    display: flex;
-    align-items: center;
+
+@media (max-width: 1040px) {
+    .projetoArea {
+        justify-content: center;
+        align-items: center;
+    }
 }
-.imgTec {
-    width: 20px;
-    margin-right: 10px;
-    margin-top: 3px;
-    margin-bottom: 4px;
-}
+
+/* CADA PROJETO */
+
 .eachProject {
     height: 240px;
     width: 400px;
     margin: 10px;
     cursor: pointer;
+}
+.eachProject2 {
+    position: relative;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.eachProject2::before {
+    width: 100%;
+    height: 98%;
+    background-color: rgba(0,0,0,.57);
+    position: absolute;
+    display: block;
+    content: "";
+}
+.eachProject2 .img {
+    width: 100%;
+}
+.projName {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 2px;
+    flex-direction: column;
+}
+.projName .tecs {
+    margin: 12px 0 0 0;
+    padding: 0;
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.border {
+    padding: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(77, 170, 255);
+}
+.cateItem {
+    margin: 12px 0 0 0;
+    font-size: 12px;
+    font-weight: 300;
+}
+.tecImg2 {
+    width: 20px;
+    background-color: rgb(245, 245, 245);
+    margin: 2px;
+    border-radius: 50%;
+}
+@media (max-width: 550px) {
+    .eachProject {
+        display: none;
+    }
+    .eachProject2 {
+        display: flex;
+    }
 }
 
 .eachProjectImg {
@@ -186,5 +270,126 @@
 
     .tecName {
         width: 268px;
+    }
+}
+
+.main2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center {
+    min-height: 60vh;
+    width: 80vw;
+    background-color: rgb(41, 41, 41);
+    border-radius: 10px;
+    display: flex;
+}
+
+.left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.left .img {
+    width: 80%;
+}
+
+.left .buttonsArea {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .buttonsArea .button {
+    height: 30px;
+    width: 120px;
+    background: linear-gradient(90deg, rgb(77, 170, 255), rgb(14, 71, 124));
+    margin: 3px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 3px black;
+    cursor: pointer;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titleArea {
+    height: 90px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    font-weight: 400;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 30px;
+    color: rgb(77, 170, 255);
+    margin-left: 25px;
+}
+.close {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-right: 25px;
+}
+.close .closeImg {
+    width: 100%;
+}
+
+.projText {
+    height: 50%;
+    width: 90%;
+    margin-top: 20px;
+    color: rgb(206, 206, 206);
+}
+
+.date {
+    color: rgb(77, 170, 255);
+}
+
+@media (max-width: 940px) {
+    .title {
+        font-size: 22px;
+    }
+    .center {
+        height: 90vh;
+        flex-direction: column;
+    }
+    .left .img {
+        width: 85%;
+        margin-bottom: 10px;
+    }
+    .left {
+    }
+    .right {
+        float: right;
+    }
+    .left .buttonsArea {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
     }
 }
