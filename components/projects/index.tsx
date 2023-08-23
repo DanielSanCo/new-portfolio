@@ -66,6 +66,7 @@ const ProjetoList = () => {
             <div className={styles.main2} style={{ display: visuali }} >
                 <div className={styles.center}>
                     <div className={styles.right}>
+                        <div className={styles.space}></div>
                         <div className={styles.titleArea}>
                             <div className={styles.title}>{projetoList[iddd].name}</div>
                             <div className={styles.close}>
@@ -73,7 +74,13 @@ const ProjetoList = () => {
                             </div>
                         </div>
                         <div className={styles.projText}>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati ex mollitia nesciunt quis recusandae corrupti sapiente aspernatur aliquid aperiam, nisi, optio fuga laboriosam commodi officia rem! Eveniet porro blanditiis amet?
+                            {projetoList[iddd].txt1}
+                        </div>
+                        <div className={styles.projText}>
+                            {projetoList[iddd].txt2}
+                        </div>
+                        <div className={styles.projText}>
+                            {projetoList[iddd].txt3}
                         </div>
                         <div className={styles.date}>{projetoList[iddd].date}</div>
                         <div className={styles.space}></div>
@@ -81,9 +88,9 @@ const ProjetoList = () => {
                     <div className={styles.left}>
                         <img src={projetoList[iddd].img} alt="" className={styles.img} />
                         <div className={styles.buttonsArea}>
-                            <a href={projetoList[iddd].link}><div className={styles.button}>Acessar</div></a>
-                            <a href={projetoList[iddd].github}><div className={styles.button}>Github</div></a>
-                            <a href={projetoList[iddd].linkedin}><div className={styles.button}>Linkedin</div></a>
+                            <a href={projetoList[iddd].link} target='_blank'><div className={styles.button}>Acessar</div></a>
+                            <a href={projetoList[iddd].github} target='_blank'><div className={styles.button}>Github</div></a>
+                            <a href={projetoList[iddd].linkedin} target='_blank'><div className={styles.button}>Linkedin</div></a>
                         </div>
                     </div>
                 </div>

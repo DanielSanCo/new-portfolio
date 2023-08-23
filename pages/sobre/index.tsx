@@ -55,7 +55,18 @@ const Sobre = () => {
                                 <>
                                     <h1 className={styles.h1}>Sobre</h1>
                                     <div className={styles.line2}></div>
-                                    <div className={styles.text}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium dolorem ea molestiae dolore quia quae in accusamus nesciunt ut error, dignissimos voluptatem fugit deserunt commodi nostrum eius suscipit itaque qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis beatae enim atque dicta at, eos dolorum consequuntur dolor illo eligendi. Nesciunt quia, consectetur ratione numquam officiis accusantium doloremque possimus quas.</div>
+                                    <div className={styles.text}>
+                                        Sou um desenvolvedor full stack apaixonado pela criação de soluções inovadoras e funcionais. Minha jornada no mundo da tecnologia começou com um objetivo de transformar minha realidade. <br /><br />Com um histórico de proficiência em todas as camadas do desenvolvimento de software, estou sempre buscando maneiras de aprimorar minhas habilidades e conhecimentos.
+
+                                        Uma das minhas maiores fortalezas é minha capacidade de trabalhar em equipe.<br /> Acredito firmemente que o sucesso de qualquer projeto depende da colaboração eficaz entre membros da equipe.<br /><br />
+
+                                        Além disso, compreendo a importância do versionamento de código para manter projetos organizados e rastreáveis. Tenho experiência sólida na utilização de ferramentas de controle de versão, como o Git, o que contribui para a estabilidade e o sucesso dos projetos em que trabalho.<br /><br />
+
+                                        Estou comprometido em continuar aprendendo e me desenvolvendo como analista de sistemas. Busco constantemente oportunidades para expandir meu conjunto de habilidades e permanecer atualizado com as últimas tendências e tecnologias. Minha paixão pela programação e meu desejo de enfrentar desafios complexos impulsionam minha dedicação em fornecer soluções de alta qualidade.<br /><br />
+
+                                        Em resumo, sou um desenvolvedor full stack que combina proficiência técnica com habilidades interpessoais fortes. Estou comprometido em contribuir para projetos de sucesso e trabalhar em equipe para alcançar metas comuns. Se você está em busca de um desenvolvedor que pode agregar valor ao seu time, estou pronto para colaborar e enfrentar novos desafios.
+                                    </div>
+                                    <div className={styles.space}></div>
                                 </>
                                 :
                                 <>
@@ -63,7 +74,15 @@ const Sobre = () => {
                                         <>
                                             <h1 className={styles.h1}>Carreira</h1>
                                             <div className={styles.line2}></div>
-                                            <div className={styles.text}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentem ea molestiae dolore quia quae in accusamus nesciunt ut error, dignissimos voluptatem fugit deserunt commodi nostrum eius suscipit itaque qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis beatae enim atque dicta at, eos dolorum consequuntur dolor illo eligendi. Nesciunt quia, consectetur ratione numquam officiis accusantium doloremque possimus quas.</div>
+                                            <div className={styles.text}>
+                                                Minha jornada é uma combinação vibrante de aprendizado contínuo e experiência prática diversificada. Com uma sólida formação em Desenvolvimento de Sistemas, adquirida através de cursos de alta qualidade como B7Web, e conhecimentos em Tecnologia da Informação pelo SENAI Jacarepaguá.<br /><br />
+
+                                                Além disso, minha experiência em projetos autônomos de desenvolvimento de sistemas, onde transformei conceitos em realidade digital, reforçou minha paixão pela criação de soluções inovadoras.<br /><br />
+
+                                                Na Smart Garden Barra, expandi meus horizontes ao combinar minha experiência em tecnologia com a arte da jardinagem. Essa jornada enriquecedora me proporcionou habilidades valiosas, como o trabalho em equipe e a atenção aos detalhes.<br /><br />
+
+                                                Estou entusiasmado para aplicar esse conhecimento diversificado e minha ética de trabalho incansável em um novo desafio, contribuindo para o sucesso da equipe e da empresa. Minha paixão pelo desenvolvimento de sistemas e meu compromisso com a excelência impulsionam meu desejo de fazer parte de projetos inovadores e impactantes.<br /><br />
+                                            </div>
                                         </>
                                         :
                                         <>
@@ -71,7 +90,10 @@ const Sobre = () => {
                                                 <>
                                                     <h1 className={styles.h1}>Cursos</h1>
                                                     <div className={styles.line2}></div>
-                                                    <div className={styles.text}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium dolorem ea molestiae dol nesciunt ut error, dignissimos voluptatem fugit deserunt commodi nostrum eius suscipit itaque qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis beatae enim atque dicta at, eos dolorum consequuntur dolor illo eligendi. Nesciunt quia, consectetur ratione numquam officiis accusantium doloremque possimus quas.</div>
+                                                    <div className={styles.text}>
+                                                        Desenvolvi minhas habilidades em programação de maneira autodidata, fazendo cursos pagos e gratuitos como B7Web de programação Full Stack. Onde aprendi Framworks como como React.js e Next.js.<br /><br />
+                                                        Foi no Bootcamp da Generation Brasil onde consegui a melhor experiencia para minha area profissional, onde tive treinamento intensivo na atuação de um profissional de analise de sistemas nas empresas. Aprendi Linguagens e metodologias ageis como SCRUM, e BSM's para a parte comportamental que é muito importante.
+                                                    </div>
                                                 </>
                                                 :
                                                 <>
@@ -79,7 +101,9 @@ const Sobre = () => {
                                                         <>
                                                             <h1 className={styles.h1}>Formação</h1>
                                                             <div className={styles.line2}></div>
-                                                            <div className={styles.text}>Lorem ipsum dolor, sit amet consectem ea molestiae dolore quia quae in accusamus nesciunt ut error, dignissimos voluptatem fugit deserunt commodi nostrum eius suscipit itaque qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis beatae enim atque dicta at, eos dolorum consequuntur dolor illo eligendi. Nesciunt quia, consectetur ratione numquam officiis accusantium doloremque possimus quas.</div>
+                                                            <div className={styles.text}>
+                                                                Formado em Analise e Desenvolvimento de Sistemas pela Faculdade Internacional Signorelli, onde aprendi tecnologias como Javascript, HTML, CSS, MYSQL, Organogramas e estrutura de dados.<br /><br />
+                                                            </div>
                                                         </>
                                                         :
                                                         ''

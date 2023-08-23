@@ -371,6 +371,10 @@
     color: rgb(77, 170, 255);
 }
 
+.space {
+    height: 50px;
+}
+
 @media (max-width: 940px) {
     .title {
         font-size: 22px;
@@ -383,13 +387,14 @@
         width: 85%;
         margin-bottom: 10px;
     }
-    .left {
-    }
     .right {
         float: right;
     }
     .left .buttonsArea {
         flex-wrap: wrap;
         margin-bottom: 20px;
+    }
+    .space {
+        height: 40px;
     }
 }

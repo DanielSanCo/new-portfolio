@@ -67,12 +67,17 @@
 }
 
 .areaContent {
+    margin-top: 100px;
     width: 70%;
-    height: 200px;
+    min-height: 200px;
     display: flex;
     justify-content: top;
     align-items: right;
     flex-direction: column;
+}
+
+.text {
+    min-height: 30vh;
 }
 
 .line2 {
@@ -81,6 +86,11 @@
     background: linear-gradient(90deg, rgb(77, 170, 255), rgba(0, 0, 0, 0));
     margin-bottom: 20px;
 }
+
+.space {
+    height: 50px;
+}
+
 
 @media (max-width: 600px) {
     .aboutContent {

@@ -4,6 +4,7 @@ import projetoList from '@/utils/projects';
 import Head from 'next/head';
 
 const tecs = [
+    { name: 'Todas', img: '' },
     { name: 'JavaScript', img: '' },
     { name: 'HTML5', img: '' },
     { name: 'CSS3', img: '' },
@@ -35,13 +36,13 @@ const Projetos = () => {
             </Head>
 
             <div className={styles.main}>
-                <div className={`${styles.projetoImg} ${styles.mainDiv}`}>
+                <div className={`${styles.projetoImg} ${styles.mainDiv}`} id='proj'>
                     <div className={styles.name}>{projetoList[number].name}</div>
                     <img src={projetoList[number].imgPc} alt="" />
-                    <div className={styles.projDesc}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam recusandae at, dolor autem totam doloremque distinctio debitis consequuntur numquam similique, ipsum vel cum odio molestias molestiae saepe, voluptatem facere voluptatibus.</div>
+                    <div className={styles.projDesc}>{projetoList[number].txt1}</div>
                     <div className={styles.buttonArea}>
-                        <div className={styles.button}>Abrir Projeto</div>
-                        <div className={styles.button}>Repositorio</div>
+                        <a href={projetoList[number].link} target='_blank'><div className={styles.button}>Acessar</div></a>
+                        <a href={projetoList[number].github} target='_blank'><div className={styles.button}>Repositorio</div></a>
                     </div>
                 </div>
                 <div className={`${styles.tecs} ${styles.mainDiv}`}>
@@ -66,7 +67,7 @@ const Projetos = () => {
 
                     {projetoList.map((item, index) => (
                         <>
-                            {item.tec.find(i => i.name === tecnologia) || tecnologia === '' ?
+                            {item.tec.find(i => i.name === tecnologia) || tecnologia === '' || tecnologia === 'Todas' ?
                                 <>
                                     {index === number ?
                                         <div className={styles.eachPro} key={index} style={{ backgroundColor: 'rgb(77, 170, 255)' }} onMouseMove={() => { setNumber(index) }} >
@@ -79,14 +80,16 @@ const Projetos = () => {
                                             </div>
                                         </div>
                                         :
-                                        <div className={styles.eachPro} key={index} onMouseMove={() => { setNumber(index) }} >
-                                            <div className={styles.nomeProjeto}>{item.name}</div>
-                                            <div className={styles.date}>{item.date}</div>
-                                            <div className={styles.projTec}>
-                                                {item.tec.map((item, index) => (
-                                                    <img src={item.img} alt="" key={index} />
-                                                ))}
-                                            </div>
+                                        <div className={styles.eachPro} key={index} onClick={() => { setNumber(index) }} >
+                                            <a href="#proj">
+                                                <div className={styles.nomeProjeto}>{item.name}</div>
+                                                <div className={styles.date}>{item.date}</div>
+                                                <div className={styles.projTec}>
+                                                    {item.tec.map((item, index) => (
+                                                        <img src={item.img} alt="" key={index} />
+                                                    ))}
+                                                </div>
+                                            </a>
                                         </div>
                                     }
                                 </>

@@ -5,9 +5,9 @@ import linguagens from '@/utils/linguagens';
 import Head from 'next/head';
 
 const Tecnologias = () => {
-    const [wid1, setWid1] = useState(250)
-    const [wid2, setWid2] = useState(250)
-    const [wid3, setWid3] = useState(250)
+    const [wid1, setWid1] = useState(60)
+    const [wid2, setWid2] = useState(60)
+    const [wid3, setWid3] = useState(60)
 
     const [opacity1, setOpacity1] = useState(1)
     const [opacity2, setOpacity2] = useState(1)
@@ -30,32 +30,32 @@ const Tecnologias = () => {
 
     const changeWidth = (num: number) => {
 
-        if (num === 1 && wid1 === 250) {
-            setWid1(600)
+        if (num === 1 && wid1 === 60) {
+            setWid1(100)
             setSpaceHeight(300)
             setSpaceHeight1(300)
-        } else if (num === 1 && wid1 === 600) {
-            setWid1(250)
+        } else if (num === 1 && wid1 === 100) {
+            setWid1(60)
             setSpaceHeight(0)
             setSpaceHeight1(0)
         }
 
-        if (num === 2 && wid2 === 250) {
-            setWid2(600)
+        if (num === 2 && wid2 === 60) {
+            setWid2(100)
             setSpaceHeight(300)
             setSpaceHeight2(300)
-        } else if (num === 2 && wid2 === 600) {
-            setWid2(250)
+        } else if (num === 2 && wid2 === 100) {
+            setWid2(60)
             setSpaceHeight(0)
             setSpaceHeight2(0)
         }
 
-        if (num === 3 && wid3 === 250) {
-            setWid3(600)
+        if (num === 3 && wid3 === 60) {
+            setWid3(100)
             setSpaceHeight(300)
             setSpaceHeight3(300)
-        } else if (num === 3 && wid3 === 600) {
-            setWid3(250)
+        } else if (num === 3 && wid3 === 100) {
+            setWid3(60)
             setSpaceHeight(0)
             setSpaceHeight3(0)
         }
@@ -77,8 +77,8 @@ const Tecnologias = () => {
                     img="https://www.guardti.com.br/blog/wp-content/uploads/2019/09/original-658daa6f72dd77c981efaff318e4cc33.jpg"
                 />
                 <div className={styles.buttonsArea}>
-                    <div className={`${styles.button} ${styles.button1}`} style={{ width: wid1, borderRadius: borderRadius }} onClick={() => { changeWidth(1), display1 == 'none' ? setBorderRadius('10px 10px 0 0') : setBorderRadius('10px 10px 10px 10px'), display1 == 'none' ? setDisplay1('flex') : setDisplay1('none') }}>Front End</div>
-                    <div className={styles.listTec} style={{ display: display1, height: spaceHeight1, width: wid1 }}>
+                    <div className={`${styles.button} ${styles.button1}`} style={{ width: `${wid1}%`, borderRadius: borderRadius }} onClick={() => { changeWidth(1), display1 == 'none' ? setBorderRadius('10px 10px 0 0') : setBorderRadius('10px 10px 10px 10px'), display1 == 'none' ? setDisplay1('flex') : setDisplay1('none') }}>Front End</div>
+                    <div className={styles.listTec} style={{ display: display1, height: spaceHeight1, width: `${wid1}%` }}>
                         {linguagens.map((item, index) => (
                             <>
                                 {item.tipo === 'Front End' ?
@@ -92,8 +92,8 @@ const Tecnologias = () => {
                             </>
                         ))}
                     </div>
-                    <div className={`${styles.button} ${styles.button2}`} style={{ width: wid2, borderRadius: borderRadius2 }} onClick={() => { changeWidth(2), display2 == 'none' ? setBorderRadius2('10px 10px 0 0') : setBorderRadius2('10px 10px 10px 10px'), display2 == 'none' ? setDisplay2('flex') : setDisplay2('none') }}>FullStack</div>
-                    <div className={styles.listTec} style={{ display: display2, height: spaceHeight2, width: wid2 }}>
+                    <div className={`${styles.button} ${styles.button2}`} style={{ width: `${wid2}%`, borderRadius: borderRadius2 }} onClick={() => { changeWidth(2), display2 == 'none' ? setBorderRadius2('10px 10px 0 0') : setBorderRadius2('10px 10px 10px 10px'), display2 == 'none' ? setDisplay2('flex') : setDisplay2('none') }}>FullStack</div>
+                    <div className={styles.listTec} style={{ display: display2, height: spaceHeight2, width: `${wid2}%` }}>
                         {linguagens.map((item, index) => (
                             <div className={styles.itemImg} key={index}>
                                 <img src={item.img} alt="" className={styles.img} />
@@ -101,8 +101,8 @@ const Tecnologias = () => {
                             </div>
                         ))}
                     </div>
-                    <div className={`${styles.button} ${styles.button3}`} style={{ width: wid3, borderRadius: borderRadius3 }} onClick={() => { changeWidth(3), display3 == 'none' ? setBorderRadius3('10px 10px 0 0') : setBorderRadius3('10px 10px 10px 10px'), display3 == 'none' ? setDisplay3('flex') : setDisplay3('none') }}>Back End</div>
-                    <div className={styles.listTec} style={{ display: display3, height: spaceHeight3, width: wid3 }}>
+                    <div className={`${styles.button} ${styles.button3}`} style={{ width: `${wid3}%`, borderRadius: borderRadius3 }} onClick={() => { changeWidth(3), display3 == 'none' ? setBorderRadius3('10px 10px 0 0') : setBorderRadius3('10px 10px 10px 10px'), display3 == 'none' ? setDisplay3('flex') : setDisplay3('none') }}>Back End</div>
+                    <div className={styles.listTec} style={{ display: display3, height: spaceHeight3, width: `${wid3}%` }}>
                         {linguagens.map((item, index) => (
                             <>
                                 {item.tipo === 'Back End' ?

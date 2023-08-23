@@ -1,5 +1,5 @@
 .main {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background-color: black;
     display: flex;
@@ -114,4 +114,43 @@
 .projTec img {
     width: 20px;
     margin: 3px;
+    background: linear-gradient(rgb(150, 204, 255), white);
+    box-shadow: 1px 1px 5px white;
+    border-radius: 3px;
+}
+
+@media (max-width: 900px) {
+    .main {
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .projetoImg {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .buttonArea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button {
+        width: 120px;
+    }
+    .mainDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .eachPro {
+        width: 90%;
+        border: 1px solid rgb(77, 170, 255);
+    }
+    .h2 {
+        font-size: 28px;
+    }
+    .h1 {
+        color: rgb(77, 170, 255);
+        font-size: 55px;
+    }
 }
