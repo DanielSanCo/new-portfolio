@@ -18,26 +18,31 @@
     flex-direction: column;
     color: white;
 }
+
 .name {
     font-size: 25px;
     margin-bottom: 20px;
 }
+
 .projetoImg img {
     width: 90%;
     transition: .2s all ease-in;
 }
+
 .projDesc {
     width: 80%;
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
 .buttonArea {
     width: 420px;
     display: flex;
 }
+
 .button {
     height: 40px;
-    width: 180px;
+    width: 120px;
     border: 1px solid white;
     margin: 10px;
     display: flex;
@@ -45,10 +50,12 @@
     align-items: center;
     cursor: pointer;
 }
+
 .button:hover {
     background-color: white;
     color: black;
 }
+
 .title {
     height: 40%;
     width: 100%;
@@ -57,16 +64,18 @@
     align-items: center;
     flex-direction: column;
 }
-.h3 {
 
-}
+.h3 {}
+
 .h2 {
     font-size: 32px;
 }
+
 .h1 {
     color: rgb(77, 170, 255);
     font-size: 60px;
 }
+
 .tecList {
     width: 100%;
     min-height: 30%;
@@ -75,6 +84,7 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
 .eachTec {
     height: 45px;
     width: 85px;
@@ -86,9 +96,11 @@
     cursor: pointer;
     transition: .2s all ease-in;
 }
+
 .eachTec:hover {
     background-color: rgb(25, 151, 255);
 }
+
 .eachPro {
     border-top: 1px solid rgb(77, 170, 255);
     border-bottom: 1px solid rgb(77, 170, 255);
@@ -98,19 +110,24 @@
     cursor: pointer;
     padding: 4px;
 }
+
 .eachPro:hover {
     background-color: rgb(77, 170, 255);
 }
+
 .nomeProjeto {
     font-size: 16px;
 }
+
 .date {
     font-size: 12px;
     margin-top: 4px;
 }
+
 .projTec {
     display: flex;
 }
+
 .projTec img {
     width: 20px;
     margin: 3px;
@@ -119,36 +136,54 @@
     border-radius: 3px;
 }
 
+.space {
+    height: 50px;
+}
+
+@media (max-width: 500px) {
+    .buttonArea {
+        width: 300px;
+        flex-wrap: wrap;
+    }
+}
+
 @media (max-width: 900px) {
     .main {
         justify-content: space-around;
         flex-direction: column;
     }
+
     .projetoImg {
         margin-top: 50px;
         margin-bottom: 50px;
     }
+
     .buttonArea {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .button {
         width: 120px;
     }
+
     .mainDiv {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
+
     .eachPro {
         width: 90%;
         border: 1px solid rgb(77, 170, 255);
     }
+
     .h2 {
         font-size: 28px;
     }
+
     .h1 {
         color: rgb(77, 170, 255);
         font-size: 55px;

@@ -24,9 +24,9 @@ const Footer = () => {
                 </div>
                 <div className={styles.eachSpace}>
                     <div className={styles.menuArea}>
-                    <h3>Acesso Rapido</h3>
-                    <div className={styles.line}></div>
-                    <div className={styles.space}></div>
+                        <h3>Acesso Rapido</h3>
+                        <div className={styles.line}></div>
+                        <div className={styles.space}></div>
                         {menuList.map((item, index) => (
                             <a href={item.link} className={styles.links} key={index}>
                                 <div>

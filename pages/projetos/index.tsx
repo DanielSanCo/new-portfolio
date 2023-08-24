@@ -43,6 +43,7 @@ const Projetos = () => {
                     <div className={styles.buttonArea}>
                         <a href={projetoList[number].link} target='_blank'><div className={styles.button}>Acessar</div></a>
                         <a href={projetoList[number].github} target='_blank'><div className={styles.button}>Repositorio</div></a>
+                        <a href={projetoList[number].linkedin} target='_blank'><div className={styles.button}>Linkedin</div></a>
                     </div>
                 </div>
                 <div className={`${styles.tecs} ${styles.mainDiv}`}>
@@ -99,6 +100,7 @@ const Projetos = () => {
                         </>
                     ))}
                 </div>
+                <div className={styles.space}></div>
             </div>
         </>
     )

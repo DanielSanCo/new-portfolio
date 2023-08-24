@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin: 5px;
 }
 
 .content {
@@ -21,7 +22,13 @@
     flex-direction: column;
 }
 .content:hover {
-    scale: 1.1;
+    scale: 1.04;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cardTitle {
@@ -33,6 +40,8 @@
     font-weight: bold;
     font-size: 20px;
     margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 .cardType {
     font-size: 15px;

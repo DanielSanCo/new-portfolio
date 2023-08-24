@@ -107,7 +107,7 @@
 .eachProject {
     height: 240px;
     width: 400px;
-    margin: 10px;
+    margin: 15px;
     cursor: pointer;
 }
 .eachProject2 {
@@ -185,6 +185,8 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    border: 1px solid rgb(77, 170, 255);
+    box-shadow: 1px 1px 4px black;
 }
 .tecImg {
     width: 18px;
@@ -359,14 +361,26 @@
 .close .closeImg {
     width: 100%;
 }
-
-.projText {
-    height: 50%;
+.line {
     width: 90%;
-    margin-top: 20px;
+    height: 2px;
+    background-color: rgb(128, 128, 128);
+}
+.projText {
+    min-height: 10%;
+    width: 90%;
+    margin-top:20px;
     color: rgb(206, 206, 206);
 }
-
+.projTextArea {
+    height: 150%;
+    width: 80%;
+    display: flex;
+    justify-content: top;
+    align-items: top;
+    flex-direction: column;
+    text-align: justify;
+}
 .date {
     color: rgb(77, 170, 255);
 }
@@ -396,5 +410,8 @@
     }
     .space {
         height: 40px;
+    }
+    .projText {
+        font-size: 15px;
     }
 }
