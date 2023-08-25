@@ -1,7 +1,8 @@
 .card {
     background: linear-gradient(rgba(77, 170, 255), rgb(0, 0, 138));
-    height: 350px;
-    width: 250px;
+    min-height: 350px;
+    max-width: 250px;
+    min-width: 250px;
     box-shadow: 1px 1px 5px rgb(77, 170, 255);
     border-radius: 5px;
     display: flex;
