@@ -233,7 +233,7 @@
         flex-direction: column;
     }
     .centerAbsolute {
-        height: 420px;
+        height: 470px;
         width: 400px;
         margin-top: 340px;
         margin-left: 20%;
@@ -257,7 +257,6 @@
         flex-direction: column;
     }
     .centerAbsolute {
-        height: 420px;
         width: 400px;
         margin-top: 340px;
         margin-left: 10%;
@@ -281,7 +280,6 @@
         flex-direction: column;
     }
     .centerAbsolute {
-        height: 400px;
         width: 370px;
         margin-top: 340px;
         margin-left: 5%;
@@ -305,7 +303,7 @@
         flex-direction: column;
     }
     .centerAbsolute {
-        height: 360px;
+        height: 420px;
         width: 360px;
         margin-top: 340px;
         margin-left: 3%;
@@ -329,7 +327,7 @@
         flex-direction: column;
     }
     .centerAbsolute {
-        height: 420px;
+        height: 450px;
         width: 350px;
         margin-top: 340px;
         margin-left: 3%;
@@ -359,7 +357,7 @@
         box-shadow: 1px 1px 5px black;
     }
     .centerAbsolute {
-        height: 450px;
+        height: 470px;
         width: 300px;
         margin-top: 340px;
         margin-left: 3%;

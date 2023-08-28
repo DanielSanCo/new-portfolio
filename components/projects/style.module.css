@@ -58,6 +58,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .eachCate:hover {
     color: rgb(77, 170, 255);
