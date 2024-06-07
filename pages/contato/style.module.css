@@ -37,7 +37,7 @@
 }
 
 .proInfoItem {
-    width: 260px;
+    width: 200px;
     height: 50%;
     font-size: 14px;
     display: flex;
@@ -68,9 +68,12 @@
 
 @media (max-width: 1110px) {
     .proInfoItem {
-        width: 180px;
+        width: 160px;
+        height: 100px;
         margin: 2px;
         font-size: 13px;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -94,19 +97,27 @@
 
 @media (max-width: 680px) {
     .main {
-        min-height: 100vh;
+        min-height: 80vh;
         flex-direction: column;
+        margin-top: 100px;
     }
 
     .left {
         height: 50vh;
         width: 90vw;
     }
+    .barraLateral {
+        height: 300px;
+        width: 100%;
+        background-color: rgb(77, 170, 255);
+        display: flex;
+    }
 
     .proInfoItem {
-        width: 180px;
+        width: 150px;
+        height: 100px;
         margin: 3px;
-        font-size: 11px;
+        font-size: 10px;
     }
 }
 
@@ -124,7 +135,7 @@
 /* MIDDLE */
 
 .middle {
-    height: 90vh;
+    height: 100vh;
     width: 50vw;
     display: flex;
     justify-content: center;
@@ -132,7 +143,7 @@
 }
 
 .contatoArea {
-    height: 70%;
+    height: 85%;
     width: 100%;
     background-color: white;
     box-shadow: 1px 1px 7px black;

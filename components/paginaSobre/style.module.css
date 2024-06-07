@@ -299,7 +299,7 @@
 }
 @media (max-width: 400px) {
     .main {
-        height: 1200px;
+        height: 900px;
         flex-direction: column;
     }
     .centerAbsolute {
@@ -323,7 +323,7 @@
 }
 @media (max-width: 380px) {
     .main {
-        height: 1200px;
+        height: 900px;
         flex-direction: column;
     }
     .centerAbsolute {

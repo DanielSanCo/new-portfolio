@@ -4,9 +4,7 @@ const listAreas = [
     { nome: 'Home', img: './projetos/portfolio.png' },
     { nome: 'Home', img: './projetos/portfolio2.png' },
     { nome: 'Home', img: './projetos/portfolio3.png' },
-    { nome: 'Home', img: './projetos/portfolio4.png' },
-    { nome: 'Home', img: './projetos/portfolio5.png' },
-    { nome: 'Home', img: './projetos/portfolio7.png' },
+    { nome: 'Home', img: './projetos/portfolio4.png' }
 ]
 
 const Sobre = () => {

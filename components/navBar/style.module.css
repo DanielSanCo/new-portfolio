@@ -190,8 +190,10 @@
     .header .top .topDiv {
         width: 100px;
     }
-    .socialLogos {
-        flex-direction: column;
+    .socialArea .img {
+        width: 18px;
+        margin: 5px;
+        cursor: pointer;
     }
 
 }

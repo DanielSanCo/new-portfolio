@@ -58,13 +58,13 @@ const NavBar = () => {
                         <div>Social</div>
                         <div className={styles.socialLogos}>
                             <div>
-                                <a href="https://github.com/DanielSanCo" target='_blank'><img src="./github.png" alt="" /></a>
+                                <a href="https://github.com/DanielSanCo" target='_blank'><img src="./github.png" alt="" className={styles.img} /></a>
                             </div>
                             <div>
-                                <a href="https://www.linkedin.com/in/daniel-santos-corr%C3%AAa-007979217/" target='_blank'><img src="./linkedin.avif" alt="" /></a>
+                                <a href="https://www.linkedin.com/in/daniel-santos-corr%C3%AAa-007979217/" target='_blank'><img src="./linkedin.avif" alt="" className={styles.img}/></a>
                             </div>
                             <div>
-                                <a href="https://www.instagram.com/daniel.santos.c/" target='_blank'><img src="./instagram.avif" alt="" /></a>
+                                <a href="https://www.instagram.com/daniel.santos.c/" target='_blank'><img src="./instagram.avif" alt="" className={styles.img} /></a>
                             </div>
                         </div>
                     </div>
